@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LINUX Learn | Aprende Linux desde tu Android</title>
+  <meta name="description" content="LINUX Learn es una aplicación educativa para aprender Linux y los conceptos fundamentales de los sistemas operativos. Proyecto académico de Sistemas Operativos.">
+
+  <!-- Tipografías: Archivo (títulos, como en la app) y Roboto (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       FRANJA INSTITUCIONAL
+       Izquierda: logotipo UANL · Derecha: logotipo FIME.
+       Archivos en assets/logos/ (PNG con fondo transparente).
+       ============================================================ -->
+  <div class="inst-strip">
+    <div class="container inst-inner">
+      <!-- Logotipo UANL (izquierda) -->
+      <img src="assets/logos/logo-uanl.png" width="148" height="149" class="inst-logo"
+           alt="Logotipo de la Universidad Autónoma de Nuevo León (UANL)">
+
+      <p class="inst-text">
+        <span class="inst-long">Universidad Autónoma de Nuevo León</span>
+        <span class="inst-long">Facultad de Ingeniería Mecánica y Eléctrica</span>
+        <span class="inst-short">UANL · FIME</span>
+      </p>
+
+      <!-- Logotipo FIME (derecha) -->
+      <img src="assets/logos/logo-fime.png" width="106" height="142" class="inst-logo"
+           alt="Logotipo de la Facultad de Ingeniería Mecánica y Eléctrica (FIME)">
+    </div>
+  </div>
+
+  <!-- ============================================================
+       ENCABEZADO Y NAVEGACIÓN
+       El nombre LINUX Learn se mantiene como marca principal.
+       ============================================================ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+
+      <a href="#inicio" class="brand" aria-label="LINUX Learn, ir al inicio">
+        LINUX <span class="learn-pill">Learn</span>
+      </a>
+
+      <!-- Botón del menú en teléfonos -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="menu" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#caracteristicas">Características</a></li>
+          <li><a href="#vista-previa">Vista previa</a></li>
+          <li><a href="#descargar">Descargar</a></li>
+          <li><a href="#acerca">Acerca del proyecto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO (sección principal)
+         ============================================================ -->
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+
+        <div class="hero-text">
+          <p class="prompt-tag"><span class="prompt-symbol">$</span> learn --linux</p>
+
+          <h1 class="hero-title">LINUX <span class="learn-pill">Learn</span></h1>
+
+          <p class="hero-lead">Domina Linux paso a paso, desde tu teléfono.</p>
+
+          <p class="hero-desc">
+            Una aplicación educativa diseñada para facilitar el aprendizaje de Linux
+            y los conceptos fundamentales de los sistemas operativos mediante
+            contenidos organizados por unidades.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#descargar" class="btn btn-primary">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+              Descargar para Android
+            </a>
+            <a href="#caracteristicas" class="btn btn-ghost">Conocer la aplicación</a>
+          </div>
+
+          <ul class="hero-meta">
+            <li>Proyecto académico</li>
+            <li>Sistemas Operativos</li>
+            <li>Android (APK)</li>
+          </ul>
+        </div>
+
+        <!-- Captura real de la pantalla de Inicio de la app -->
+        <div class="hero-visual">
+          <span class="shape shape-lime" aria-hidden="true"></span>
+          <span class="shape shape-blue" aria-hidden="true"></span>
+          <figure class="screen screen-hero">
+            <img src="assets/img/captura-inicio.png" width="720" height="1460"
+                 alt="Pantalla de Inicio de LINUX Learn con el tema actual, el progreso general y la ruta de aprendizaje">
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CARACTERÍSTICAS
+         Ajusta los textos si alguna característica cambia en la app.
+         ============================================================ -->
+    <section class="section" id="caracteristicas">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Características</p>
+          <h2>Lo que encontrarás en la app</h2>
+          <p>Un recorrido ordenado por los temas de Linux y de sistemas operativos, pensado para estudiar a tu ritmo.</p>
+        </header>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="7" height="7" rx="1.5"/><rect x="14" y="4" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+            </div>
+            <h3>Organizada por unidades</h3>
+            <p>Cuatro unidades y 20 temas forman una ruta de aprendizaje para avanzar de un tema al siguiente sin perderte.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 10 3 2-3 2M12 15h5"/></svg>
+            </div>
+            <h3>Fundamentos de Linux</h3>
+            <p>Conoce la historia, la arquitectura y los tipos de Linux, con Ubuntu como sistema de referencia.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg>
+            </div>
+            <h3>Conceptos de sistemas operativos</h3>
+            <p>Multitarea, concurrencia, memoria, almacenamiento, redes y seguridad, como apoyo a la materia.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M11 18h2"/></svg>
+            </div>
+            <h3>Diseñada para Android</h3>
+            <p>Instala la app con el archivo APK y consulta tu avance general y por unidad desde tu teléfono.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         VISTA PREVIA (capturas reales de la app)
+         Imágenes en assets/img/. Se recortaron solo las barras del
+         sistema Android; la pantalla de la app no se modificó.
+         La portada (captura-bienvenida.png) es una copia para la web
+         sin la franja superior de logotipos; la captura original está
+         en assets/fuente/portada-original.png y la página no la usa.
+         ============================================================ -->
+    <section class="section section-alt" id="vista-previa">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Vista previa</p>
+          <h2>Así se ve LINUX Learn</h2>
+          <p>Algunas pantallas de la aplicación en su versión actual.</p>
+        </header>
+
+        <div class="gallery">
+          <!-- Pantalla de bienvenida: al ser más corta (sin la franja de logotipos),
+               se coloca dentro de .screen-fill para que el marco mida lo mismo que los demás
+               y la imagen quede abajo, sobre el mismo fondo de la app. -->
+          <figure class="shot">
+            <div class="screen">
+              <div class="screen-fill">
+                <img src="assets/img/captura-bienvenida.png" width="720" height="1256" loading="lazy"
+                     alt="Pantalla de bienvenida de LINUX Learn con el título, el botón Comenzar y el personaje de Linux">
+              </div>
+            </div>
+            <figcaption>
+              <strong>Pantalla de bienvenida</strong>
+              La portada de la app, con el acceso para comenzar a aprender.
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <div class="screen">
+              <img src="assets/img/captura-inicio.png" width="720" height="1460" loading="lazy"
+                   alt="Pantalla de Inicio de LINUX Learn">
+            </div>
+            <figcaption>
+              <strong>Inicio</strong>
+              Retoma el último tema, revisa tu progreso general y sigue la ruta de aprendizaje.
+            </figcaption>
+          </figure>
+
+          <figure class="shot">
+            <div class="screen">
+              <img src="assets/img/captura-perfil.png" width="720" height="1460" loading="lazy"
+                   alt="Pantalla de Perfil de LINUX Learn con el progreso general y por unidad">
+            </div>
+            <figcaption>
+              <strong>Perfil</strong>
+              Consulta tu avance general y el progreso de cada una de las cuatro unidades.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         DESCARGA E INSTALACIÓN
+         ============================================================ -->
+    <section class="section" id="descargar">
+      <div class="container">
+
+        <div class="download-panel">
+          <div class="download-info">
+            <p class="eyebrow">Descargar</p>
+            <h2>Llévate LINUX Learn a tu teléfono</h2>
+            <p>Descarga el archivo APK e instálalo directamente en tu dispositivo Android.</p>
+
+            <!-- ======================================================
+                 BOTÓN DE DESCARGA (GitHub Releases)
+                 >>> CAMBIAR AQUÍ <<<  Sustituye en el href:
+                   · TU-USUARIO       → tu nombre de usuario de GitHub
+                   · linux-learn-web  → el nombre de tu repositorio (si usas otro)
+                 Debe terminar exactamente en:
+                   /releases/latest/download/linux-learn.apk
+                 Mientras diga TU-USUARIO, main.js muestra un aviso en lugar
+                 de abrir una dirección que todavía no existe.
+                 Pasos completos en LEEME.md, sección 12.
+                 ====================================================== -->
+            <a id="apk-download"
+               href="https://github.com/TU-USUARIO/linux-learn-web/releases/latest/download/linux-learn.apk"
+               class="btn btn-primary btn-lg">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+              Descargar APK
+            </a>
+
+            <!-- Aviso que solo aparece si el enlace aún no se configuró -->
+            <p class="download-pending" id="apk-pending" role="status" hidden>
+              La descarga estará disponible cuando se publique la primera versión en GitHub Releases.
+            </p>
+
+            <!-- Datos del APK actual (versión 1.0.0, requiere Android 7.0 o superior).
+                 Actualízalos cuando publiques un APK nuevo. -->
+            <ul class="download-meta">
+              <li><span>Versión</span>1.0.0</li>
+              <li><span>Plataforma</span>Android 7.0+</li>
+              <li><span>Formato</span>APK</li>
+              <li><span>Tamaño</span>77 MB</li>
+            </ul>
+          </div>
+
+          <div class="install">
+            <h3>Cómo instalarla</h3>
+            <ol class="steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>
+                  <strong>Descarga el APK</strong>
+                  <p>Pulsa el botón de descarga desde tu teléfono Android.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>
+                  <strong>Abre el archivo</strong>
+                  <p>Búscalo en la notificación de descarga o en la carpeta Descargas.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>
+                  <strong>Permite la instalación</strong>
+                  <p>Si Android lo pide, autoriza instalar apps desde esa fuente (navegador o administrador de archivos).</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-num">4</span>
+                <div>
+                  <strong>Instala y abre</strong>
+                  <p>Pulsa «Instalar» y, al terminar, abre LINUX Learn.</p>
+                </div>
+              </li>
+            </ol>
+            <p class="install-note">
+              Como la app no se distribuye por Google Play, Android puede mostrar un aviso de seguridad.
+              Descárgala únicamente desde esta página oficial del proyecto.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ACERCA DEL PROYECTO
+         Información general del proyecto e integrantes del equipo
+         (solo nombre completo y matrícula).
+         ============================================================ -->
+    <section class="section section-alt" id="acerca">
+      <div class="container about">
+        <div class="about-text">
+          <p class="eyebrow">Acerca del proyecto</p>
+          <h2>Un proyecto universitario hecho para aprender</h2>
+          <p>
+            LINUX Learn se desarrolló como proyecto académico para la materia de
+            Sistemas Operativos en la Facultad de Ingeniería Mecánica y Eléctrica
+            de la Universidad Autónoma de Nuevo León.
+          </p>
+          <p>
+            Su objetivo es ofrecer a los estudiantes una herramienta de apoyo para
+            comprender Linux y los fundamentos de los sistemas operativos desde un
+            dispositivo móvil.
+          </p>
+        </div>
+
+        <aside class="about-card">
+          <dl>
+            <div>
+              <dt>Materia</dt>
+              <dd>Sistemas Operativos</dd>
+            </div>
+            <div>
+              <dt>Institución</dt>
+              <dd>FIME · UANL</dd>
+            </div>
+            <div>
+              <dt>Equipo</dt>
+              <dd>Equipo #2</dd>
+            </div>
+            <div>
+              <dt>Tecnología</dt>
+              <dd>Flutter · Android</dd>
+            </div>
+          </dl>
+
+          <p class="about-note">Desarrollada en equipo por estudiantes de la materia como proyecto académico.</p>
+        </aside>
+
+        <!-- INTEGRANTES DEL EQUIPO
+             Orden y datos tal como se proporcionaron: matrícula y nombre completo. -->
+        <div class="team-block">
+          <h3>Integrantes del equipo</h3>
+          <ol class="team-list">
+            <li><span class="team-id"><span class="team-label">Matrícula</span> 2171232</span><span class="team-name">Cruz Leyton Diego</span></li>
+            <li><span class="team-id"><span class="team-label">Matrícula</span> 2226958</span><span class="team-name">Cotlame Nieto Lesly Adamaris</span></li>
+            <li><span class="team-id"><span class="team-label">Matrícula</span> 2160745</span><span class="team-name">Del Ángel Martínez Edgar Jesús</span></li>
+            <li><span class="team-id"><span class="team-label">Matrícula</span> 2226766</span><span class="team-name">Díaz García Josué Emiliano</span></li>
+            <li><span class="team-id"><span class="team-label">Matrícula</span> 2226678</span><span class="team-name">Hernández Fraire Diana Lucia</span></li>
+            <li><span class="team-id"><span class="team-label">Matrícula</span> 2019069</span><span class="team-name">Juarez Luna Cristopher Led</span></li>
+            <li><span class="team-id"><span class="team-label">Matrícula</span> 2103101</span><span class="team-name">Leal García Edgar Adan</span></li>
+            <li><span class="team-id"><span class="team-label">Matrícula</span> 2060308</span><span class="team-name">Rodríguez Ortiz Danna Saraí</span></li>
+            <li><span class="team-id"><span class="team-label">Matrícula</span> 2148132</span><span class="team-name">Santos Ramírez Edmundo</span></li>
+            <li><span class="team-id"><span class="team-label">Matrícula</span> 2153261</span><span class="team-name">Torres Cabriales Aaron Sebastián</span></li>
+            <li><span class="team-id"><span class="team-label">Matrícula</span> 2101844</span><span class="team-name">Torres Pasillas Ángela Susana</span></li>
+            <li><span class="team-id"><span class="team-label">Matrícula</span> 2169894</span><span class="team-name">Ordaz García Valeria</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       PIE DE PÁGINA
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-text">
+        <p class="brand">LINUX <span class="learn-pill">Learn</span></p>
+        <p>Proyecto académico · Sistemas Operativos · Facultad de Ingeniería Mecánica y Eléctrica, UANL</p>
+      </div>
+
+      <a href="#inicio" class="to-top">Volver arriba ↑</a>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> LINUX Learn. Sitio con fines educativos.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# ------------------------------------------------------------
+# LINUX Learn · archivos que NO se suben al repositorio
+# ------------------------------------------------------------
+
+# El APK pesa 77 MB y se publica como archivo adjunto de una
+# versión en GitHub Releases, no dentro del repositorio.
+# (La copia local sigue en assets/apk/ para que puedas subirla.)
+assets/apk/*.apk
+
+# Archivos que crean automáticamente los sistemas operativos
+.DS_Store
+Thumbs.db
+desktop.ini
